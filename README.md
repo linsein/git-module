@@ -8,6 +8,12 @@ Package git-module is a Go module for Git access through shell commands.
 
 - Git version must be no less than **2.4.9**.
 
+## Installation
+
+```zsh
+go get github.com/gogs/git-module/v2
+```
+
 ## License
 
 This project is under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
