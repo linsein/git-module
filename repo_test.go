@@ -501,3 +501,12 @@ func TestRepository_Fsck(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+
+func TestRepository_ObjectFormat(t *testing.T) {
+	ctx := context.Background()
+	obf, err := testrepo.ObjectFormat(ctx)
+	if err != nil {
+		t.Fatal(err)
+	}
+	assert.Equal(t, obf, ObjectFormatSHA1)
+}
